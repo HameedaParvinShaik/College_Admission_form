@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Admin Portal</h1>
+
+  <div id="loginBox">
+    <input type="password" id="password" placeholder="Enter password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+  </div>
+
+  <div id="dashboard" style="display:none">
+    <input id="search" placeholder="Search by name or course" />
+    <table id="submissionsTable">
+      <thead>
+        <tr><th>Name</th><th>Course</th><th>Email</th><th>Phone</th><th>Time</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

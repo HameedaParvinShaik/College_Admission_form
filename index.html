@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Admission Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>College Admission Form</h1>
+    <form id="admissionForm">
+      <label>Full Name <input type="text" name="name" required /></label>
+      <label>Date of Birth <input type="date" name="dob" required /></label>
+
+      <label>Gender</label>
+      <div class="inline">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" required /> Female</label>
+        <label><input type="radio" name="gender" value="Other" required /> Other</label>
+      </div>
+
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Phone <input type="tel" name="phone" required /></label>
+      <label>Address <textarea name="address" rows="3" required></textarea></label>
+
+      <label>Course
+        <select name="course" required>
+          <option value="">--Select--</option>
+          <option>B.Sc</option>
+          <option>B.Com</option>
+          <option>B.A</option>
+          <option>B.Tech</option>
+          <option>MBA</option>
+        </select>
+      </label>
+
+      <label>Upload Photo <input type="file" name="photo" accept="image/*" required /></label>
+
+      <label>
+        <input type="checkbox" name="declare" required />
+        I hereby declare that the above information is true.
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="msg"></p>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
